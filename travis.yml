@@ -18,7 +18,7 @@ script:
   - flutter build web
   - cd ..
   - cp -R ./client/build/web/* ./public
-  
+
 before_deploy:
   - echo "Clean up files that aren't used in hosting"
   - rm -rf ./client
@@ -26,18 +26,14 @@ before_deploy:
   - ls -la ./public
 
 # Deploy configuration
-# Use the Flutter console to configure your web app. 
+# Use the Flutter console to configure your web app.
 # https://docs.travis-ci.com/user/deployment/firebase/
 deploy:
   provider: firebase
   token:
-    secure: "CugRCg8BvJmQ3q5n/ooQi4agWn94dBHFmEZr7mlzSnyxUK5uFY6WcDNDG4RMz+LJ3dmK9TQflv1QeSYx0/CZXWhuBVQu3Rv9W7GFHE19Ek9pxUPraoaH1Pi5YB/w6ufgBAHREgVR74iknqp40Zpb13QV+uD1YIj4bncrBkL1fhB2AFTEBRZXW7KBOPhhVnhflErVhB9xGQZ9bt6+gHvepOVW56WSi6ZcPncStx1vfSC8ktJp8EUQvCdEdEfodZ8IEW+ICILZrqkr3e44ezR2Zjb+B9c2akDPZL3GAUGXZJfaxDQ96X9PgIQ1Cm5W/a9rcwJpXiKQeP2LNJuXASMwL9g0DAqsDdL6Cgh79CbyE42N7VRTMYplSrO2FWMPaBC5K/BICzyH9VGMlqsg7Pes+/11JtJRj1PnCE4XzJHMJ/3mbIx/iUvAspvew+ck5RYczlxe7A4RQqlzNjgbVnFnXrikeVCsUgYESiWNmCNlEet4prkfhWEOTrIfyuWVeh/Q7k2EgcE//Kz0OWdcnPWnj2DJZntjl9F0vmFL5AEAl1scEaeVLQNpaJXa7vrsNZV0Xxe1Og53PCRdXOo8o+j4Et6OU4bfh60iqLNQ3inmW8CJ/WjwBimbF5FQF9JyPo/DQnWaeTTIW+z3Z5DKgzrLHxUN2mxiOyEQI/DOVkqzGYk="
-  project: "donnelson-sandbox"
+    secure: "1//03D9dlLzs6y4lCgYIARAAGAMSNwF-L9Ir-EdEMpnlcdFbMpF-jwR3XHXHeQbf06sh48idnpaxOYaJTXd3qi4jz4f5f2ZV3SSbrCc"
+  project: "steph2020-cloud/auzwe-pty"
   skip_cleanup: true
-
-
-
-    
 # Run Travis CLI in this repo
 # gem install travis
 
@@ -52,9 +48,8 @@ deploy:
 # gem install travis
 # travis login --github-token replace_with_github_personal_token
 # cd to/this/repo
-# travis encrypt "$FIREBASE_TOKEN"  
+# travis encrypt "$FIREBASE_TOKEN"
 
 # Deploy
 # firebase deploy --token "$FIREBASE_TOKEN"
-
 
