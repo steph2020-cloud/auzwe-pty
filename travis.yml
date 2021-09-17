@@ -34,6 +34,8 @@ deploy:
     secure: "1//03D9dlLzs6y4lCgYIARAAGAMSNwF-L9Ir-EdEMpnlcdFbMpF-jwR3XHXHeQbf06sh48idnpaxOYaJTXd3qi4jz4f5f2ZV3SSbrCc"
   project: "steph2020-cloud/auzwe-pty"
   skip_cleanup: true
+  on:
+    branch: main
 # Run Travis CLI in this repo
 # gem install travis
 
