@@ -31,7 +31,7 @@ before_deploy:
 deploy:
   provider: firebase
   token:
-    secure: "1//03D9dlLzs6y4lCgYIARAAGAMSNwF-L9Ir-EdEMpnlcdFbMpF-jwR3XHXHeQbf06sh48idnpaxOYaJTXd3qi4jz4f5f2ZV3SSbrCc"
+    secure: "1//03Pr-Vbc9LKTDCgYIARAAGAMSNwF-L9IrnV6VaiGST633wEPOQQwNUgs9SNHkijZsDne1HWgSxahCJ3XwPfQ0H-cslY638uZMVhg"
   project: "steph2020-cloud/auzwe-pty"
   skip_cleanup: true
   on:
